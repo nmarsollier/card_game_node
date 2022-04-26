@@ -33,17 +33,39 @@ Microservicios.code-workspace
 
 ## Dependencias
 
+Ademas vamos a necesitar lo siguiente :
+
+### Node con npm versión 12+
+
+Seguir la guía de instalación desde el sitio oficial [nodejs.org](https://nodejs.org/)
+
 ### MongoDB
 
 Es la base de datos principal.
 
 Seguir las guías de instalación [Card Game](https://github.com/nmarsollier/card_game)
 
+Podemos usar docker
+
+```bash
+docker run -d --name card_game_mongo -d -p 27017:27017 mongo:4.0.18-xenial
+```
+
+O seguir las guiás de instalación de mongo desde el sitio oficial: [mongodb.com](https://www.mongodb.com/download-center#community)
+
+Sugiero instalar Mongodb Compass para poder navegar la base de datos en forma visual [Compass](https://www.mongodb.com/products/compass)
+
 ### Redis
 
 Redis es una segunda opción de almacenamiento de datos. Para almacenamiento de imágenes hace uso de Redis.
 
 Ver la guía en la pagina del proyecto : [Card Game](https://github.com/nmarsollier/card_game)
+
+Podemos usar docker
+
+```bash
+docker run -d --name card_game_redis -d -p 6379:6379 redis:5.0.9-buster
+```
 
 ### Node 16+
 
