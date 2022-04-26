@@ -9,14 +9,17 @@
     "author": "Nestor Marsollier",
     "license": "MIT",
     "scripts": {
+        "startw": "npm run build-ts && npm run apidocw && npm run apidocmdw && npm run watch",
         "start": "npm run build && npm run watch",
         "build": "npm run build-ts && npm run apidoc && npm run apidocmd",
         "serve": "node dist/server.js",
         "watch": "node dist/server.js",
         "build-ts": "tsc",
         "watch-ts": "tsc -w",
-        "apidoc": "./node_modules/.bin/apidoc -i src -o ./dist/public",
-        "apidocmd": "./node_modules/.bin/apidoc-markdown2 -p ./dist/public -o README-API.md"
+        "apidocw": ".\\node_modules\\.bin\\apidoc -i src -o dist\\public",
+        "apidoc": "./node_modules/.bin/apidoc -i src -o dist/public",
+        "apidocmd": "./node_modules/.bin/apidoc-markdown2 -p ./dist/public -o README-API.md",
+        "apidocmdw": ".\\node_modules\\.bin\\apidoc-markdown2 -p dist\\public -o README-API.md"
     },
     "dependencies": {
         "apidoc-markdown2": "0.3.7",
