@@ -1,9 +1,9 @@
 "use strict";
 
+import * as provinces from "../provinces/service";
+import * as error from "../server/error";
 import { IProfile, Profile } from "./schema";
 const mongoose = require("mongoose");
-import * as error from "../server/error";
-import * as provinces from "../provinces/service";
 
 async function findForUser(userId: string): Promise<IProfile> {
   return await Profile.findOne({

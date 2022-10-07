@@ -3,7 +3,6 @@
 import * as express from "express";
 import * as imageService from "../image/service";
 import * as profileService from "../profile/service";
-import * as error from "../server/error";
 import { onlyLoggedIn } from "../token/passport";
 import { ISessionRequest } from "../user/service";
 

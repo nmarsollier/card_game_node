@@ -18,4 +18,3 @@ export function initModules(app: express.Express) {
     image.initModule(app);
     profilePicture.initModule(app);
 }
-

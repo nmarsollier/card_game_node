@@ -1,7 +1,6 @@
 "use strict";
 
 import * as express from "express";
-import * as error from "../server/error";
 import { onlyLoggedIn } from "../token/passport";
 import { ISessionRequest } from "../user/service";
 import * as service from "./service";
